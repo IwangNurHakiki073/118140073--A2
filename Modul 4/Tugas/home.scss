@@ -1,0 +1,17 @@
+$align1: center;
+
+img{
+    width: 30%;
+    height: 30%;
+    margin-left: 20%;
+    margin-right: 30%; 
+}
+
+header{
+    font-size: 30px;
+    text-align: $align1;
+}
+
+footer{
+    text-align: $align1;
+}

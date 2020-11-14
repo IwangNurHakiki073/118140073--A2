@@ -1,0 +1,42 @@
+$mycolor: rgb(180, 172, 176);
+$bgheader:  rgb(105, 101, 101);
+$bgcontent: #f5daba; 
+$bgfooter: #fde0b4;
+$align2: center;
+
+
+.header{
+    text-align: right;
+    word-spacing: 50px;
+    background-color: $bgheader ;
+    padding:30px;
+    font-size:25px;
+    font-family: Verdana;
+    a{
+        color: beige;
+    }
+    a:hover{
+        background-color:$mycolor;
+        padding: 20px;
+    }    
+   
+}
+
+.content{        
+    margin-right: 50px;
+    font-size: 30px;
+    font-family: Helvetica;
+    text-align: $align2 ;
+}
+
+img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.footer{
+    font-size: 19px;
+    text-align: $align2;
+}
