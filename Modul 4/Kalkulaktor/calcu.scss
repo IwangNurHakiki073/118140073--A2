@@ -1,0 +1,62 @@
+$color1: #000000;
+$border: none;
+$width: 150px;
+$margin: 5px;
+$border-radius: 5px;
+$padding: 10px; 
+
+body{
+    font-family: 'Lucida Sans Regular';
+    font-size: 20px;
+}
+
+.header{
+    width: 500px;
+    height: auto;
+    background: #F18C8E;
+    padding: 20px 20px 30px 20px;
+    border-radius: $border-radius;
+    color: $color1;
+  }
+.title{
+    text-align: center;
+    color: #eee;
+    font-weight: 1000px;
+    }
+
+.Bil{
+    width: 280px;
+    margin: 10px;
+    border: $border;
+    font-size: 14pt;
+    border-radius: $border-radius;
+    padding: $padding; 
+}
+
+.oprs{
+	font-size: 16pt;
+	border: $border;
+	width: 150px;
+	margin: 5px;
+	border-radius: $border-radius;
+	padding: $padding;
+}
+
+.tombol{
+    font-size: 16pt;
+	border: none;
+	width: 150px;
+	margin: $margin;
+	border-radius: $border-radius;
+	padding: $padding;
+    color: rgb(5, 5, 5);
+    font-size: 17pt;
+}
+.hasil{
+    width: 280px;
+    margin: 10px;
+    border: $border;
+    font-size: 14pt;
+    border-radius: $border-radius;
+    padding: $padding; 
+    } 
