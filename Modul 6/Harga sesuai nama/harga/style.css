@@ -1,0 +1,17 @@
+body{
+    background: #ebb0b0;
+    font-family: Helvetica;
+    font-size: 25px;
+}
+
+.header{
+	width: 500px;
+	background: #f7e6e6;
+	margin: 100px auto;
+	padding: 10px 20px 0px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Helvetica;
+    height: 800px;
+    font-weight: bold;
+}
