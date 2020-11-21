@@ -1,0 +1,13 @@
+body{
+    background: #fcc6c6;
+    font-family: Helvetica;
+    font-size: 27px;
+}
+
+.faktorial{
+	width: 500px;
+	background: #F18C8E;
+	margin: 150px auto;
+	padding: 10px 20px 50px 20px;
+	border-radius: 5px;
+}
