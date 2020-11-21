@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tugas 2</title>
+        <title>Tugas 2 Hitung Harga Bed Nama</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
