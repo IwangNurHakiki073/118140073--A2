@@ -32,9 +32,9 @@
 
             listBarang.innerHTML = "";
 
-            for (let n = 0; n < dataBarang.length; n++) {
-                var btnEdit = "<a href='#' onclick='edit(" + n + ")'>UPDATE</a>";
-                var btnHapus = "<a href='#' onclick='hapus(" + n + ")'>DELETE</a>";
+            for (let n = 0; n < dataBarang.length; n++) { 
+                 var btnHapus = "<a href='#' onclick='hapus(" + n + ")'>DELETE</a>";
+                 var btnEdit = "<a href='#' onclick='edit(" + n + ")'>UPDATE</a>";
 
                 listBarang.innerHTML += "<li>" + dataBarang[n] + "[ " + btnHapus + "   || " + btnEdit + "] </li>";
             }
