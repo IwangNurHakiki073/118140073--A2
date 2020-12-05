@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Modul 5</title>
+</head>
+
+<body>
+
+    <font face="Candara" size="5">
+        <h1>Input Form</h1>
+        <input type="text" name="barang" placeholder="TAMBAH BARANG.........." />
+        <input type="button" onclick="tambahBarang()" value="TAMBAH" />
+
+        <div>
+            <ul id="list-barang"></ul>
+        </div>
+    </font>
+
+    <script>
+        var dataBarang = [
+            "Papan Tulis",
+            "Meja",
+            "Jendela",
+            "Vas Bunga",
+            "Lemari",
+            "Taplak Meja"
+        ];
+
+        function showBarang() {
+            var listBarang = document.getElementById("list-barang");
+            // clear list barang
+            listBarang.innerHTML = "";
+
+            // cetak semua barang
+            for (let i = 0; i < dataBarang.length; i++) {
+                var btnEdit = "<a href='#' onclick='editBarang(" + i + ")'>UPDATE</a>";
+                var btnHapus = "<a href='#' onclick='hapusBarang(" + i + ")'>DELETE</a>";
+
+                listBarang.innerHTML += "<li>" + dataBarang[i] + " [" + btnHapus + "   || " + btnEdit + "]</li>";
+            }
+        }
+
+        function tambahBarang() {
+            var input = document.querySelector("input[name=barang]");
+            dataBarang.push(input.value);
+            showBarang();
+        }
+
+        function editBarang(id) {
+            var newBarang = prompt("Update barang baru ", dataBarang[id]);
+            dataBarang[id] = newBarang;
+            showBarang();
+        }
+
+        function hapusBarang(id) {
+            dataBarang.splice(id, 1);
+            showBarang();
+            window.alert("Apakah anda yakin untuk menghapusnya");
+        }
+        showBarang();
+
+
+    </script>
+</body>
+
+</html>
