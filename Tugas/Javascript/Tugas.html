@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Modul 5</title>
+</head>
+
+<body>
+
+    <font face="Candara" size="5">
+        <h1>Input Form</h1>
+        <input type="text" name="barang" placeholder="TAMBAH BARANG.........." />
+        <input type="button" onclick="tambah()" value="TAMBAH" />
+
+        <div>
+            <ul id="list-barang"></ul>
+        </div>
+    </font>
+
+    <script>
+        var dataBarang = [
+            "Papan Tulis",
+            "Meja",
+            "Jendela",
+            "Vas Bunga",
+            "Lemari",
+            "Taplak Meja"
+        ];
+
+        function showBarang() {
+            var listBarang = document.getElementById("list-barang");
+
+            listBarang.innerHTML = "";
+
+            for (let n = 0; n < dataBarang.length; n++) {
+                var btnEdit = "<a href='#' onclick='edit(" + n + ")'>UPDATE</a>";
+                var btnHapus = "<a href='#' onclick='hapus(" + n + ")'>DELETE</a>";
+
+                listBarang.innerHTML += "<li>" + dataBarang[n] + "[ " + btnHapus + "   || " + btnEdit + "] </li>";
+            }
+        }
+
+        function tambah() {
+            var input = document.querySelector("input[name=barang]");
+            dataBarang.push(input.value);
+            showBarang();
+        }
+
+        function hapus(id) {
+            dataBarang.splice(id, 1);
+            showBarang();
+            window.alert("Apakah anda yakin untuk menghapusnya");
+        }
+
+        function edit(id) {
+            var newBarang = prompt("Update barang baru ", dataBarang[id]);
+            dataBarang[id] = newBarang;
+            showBarang();
+        }
+
+
+        showBarang();
+
+
+    </script>
+</body>
+
+</html>
