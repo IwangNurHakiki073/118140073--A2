@@ -1,1 +1,36 @@
+<?xml>
+    <biodata>
+        <nama>
+            <awal>Iwang</awal>
+            <akhir>Nur Hakiki</akhir>
+        </nama>
+    </biodata>
 
+    <saudara>
+        <kakak>Lukman H</kakak>
+        <kakak>Anggun Dwi P S</kakak>
+        <kakak>Maytia Ayu M</kakak>
+    </saudara>
+
+    <orangtua>
+        <ayah>Marino</ayah>
+        <ibu>Sulastri</ibu>
+    </orangtua>
+
+    <hobi>Masak</hobi>
+
+    <alamat>
+        <desa>Cempaka Nuban</desa>
+        <kecamatan>Batanghari Nuban</kecamatan>
+        <kabupaten>Lampung Timur</kabupaten>
+        <provinsi>Lampung</provinsi>
+    </alamat>
+
+    <age>20tahun</age>
+
+    <sosialMedia>
+        <ig>iwgnr_</ig>
+        <fb>Iwang Nur Hakiki<fb>
+    </sosialMedia>
+    
+</biodata>
